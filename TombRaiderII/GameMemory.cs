@@ -10,7 +10,7 @@ namespace TR2
     /// <summary>
     ///     The supported game versions.
     /// </summary>
-    internal enum GameVersion
+    public enum GameVersion
     {
         MP,   // Multipatch (Steam/GoG default)
         EPC,  // Eidos Premier Collection
@@ -21,7 +21,7 @@ namespace TR2
     /// <summary>
     ///     The memory sizes of supported game versions (in bytes).
     /// </summary>
-    internal enum ExpectedSize
+    public enum ExpectedSize
     {
         Others = 1691648,
         UKB = 1724416
@@ -30,7 +30,7 @@ namespace TR2
     /// <summary>
     ///     The game's watched memory addresses.
     /// </summary>
-    internal class GameData : MemoryWatcherList
+    public class GameData : MemoryWatcherList
     {
         public const int FirstLevelTimeAddress = 0x51EA24;  // Valid for all supported game versions.
 
@@ -125,7 +125,7 @@ namespace TR2
     /// <summary>
     ///     Manages the game's watched memory values for <see cref="Autosplitter"/>'s use.
     /// </summary>
-    internal class GameMemory
+    public class GameMemory
     {
         public Process Game;
         public GameData Data;

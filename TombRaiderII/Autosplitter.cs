@@ -10,7 +10,7 @@ namespace TR2
     ///     The game's level and demo values.
     /// </summary>
     [SuppressMessage("ReSharper", "UnusedMember.Global")]
-    internal enum Level : uint
+    public enum Level : uint
     {
         // Levels
         LarasHome = 00,
